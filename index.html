@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Registration</title>
+  <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+  
+  <div class="container">
+    <h2>User Registration</h2>
+    <form id="registrationForm" onsubmit="return redirectToLogin()">
+      <input type="text" id="fullName" placeholder="Full Name" required><br>
+      <input type="email" id="email" placeholder="Email ID" required><br>
+      <input type="tel" id="mobileNo" placeholder="Mobile Number" required><br>
+      <input type="password" id="password" placeholder="Password" required><br>
+      <input type="submit" value="Register">
+    </form>
+  </div>
+
+  <script src="registration.js"></script>
+
+  <script>
+    function redirectToLogin() {
+      alert('Registration successful! Please proceed to login.');
+      window.location.href = "login.html";
+      return false; 
+    }
+  </script>
+</body>
+</html>
